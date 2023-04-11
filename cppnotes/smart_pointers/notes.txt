@@ -1,0 +1,7 @@
+NOTE
+smart pointers are basically pointers + some functions and rules to manage the memory 
+they point to, stuff like calling constrctors/destructors automatically etc
+examples:
+unique ptr -> can be the only one pointing to the data
+shared ptr -> data gets deleted only when noone points to it
+weak ptr -> doenst change refcount but knows if its data is still valid

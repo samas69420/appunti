@@ -1,0 +1,3 @@
+NOTE
+new -> like malloc + call constructor
+delete -> like free + call destructor

@@ -1,0 +1,2 @@
+NOTE
+references are unique (cant reassign for ex. "int& a"" to another variable )

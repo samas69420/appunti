@@ -1,0 +1,4 @@
+NOTE
+"static" in file is like private for a class but for translation unit
+"static" in class shares the same value among all instances
+good practice for file case: everything should be marked static if it wont be shared

@@ -1,0 +1,6 @@
+NOTE
+problem: when a sub-class is used as its parent and call a overwritten method the
+         partent version is used instead of the overwritten one
+solution: mark as virtual the overwritten method in parent definition
+          "virtual" tells compiler that if the method is overwritten the ow version
+          should be used instead of the default implementation

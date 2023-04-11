@@ -1,0 +1,6 @@
+NOTE 
+singletons are classes that will be instanciated only once
+
+QUESTIONS
+why size is 1?
+why can instanciate unique_instance if it is private?

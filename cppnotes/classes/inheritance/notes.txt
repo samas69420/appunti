@@ -1,0 +1,3 @@
+NOTE
+public access specifier -> public stuff stays public in child and private stays private
+private access specifier -> everything becomes private in child

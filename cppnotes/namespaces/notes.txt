@@ -1,0 +1,5 @@
+NOTE
+used to avoid conflict between symbols, in the example there are different functions
+with same name and prototype but since they are in different namespaces they're 
+considered as two different things by the compiler
+namespaces and static classes are basically the same

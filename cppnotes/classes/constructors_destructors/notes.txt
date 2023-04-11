@@ -1,0 +1,14 @@
+NOTES
+
+any command like "Class obj;" will lead to calling to Class constructor,
+if Class has any object of class "Class2" in its attributes Class2 default constructor 
+will be called automatically before actually calling the constructor of parent class
+
+if class "Class" has an attribute of class "Class2", calling explicitly Class2
+constructor in Class constructor will lead to have multiple unnecessary calls to the
+Class2 constructor for the same object and a waste of performance
+use initializer list to call the constructor only once in its desired version 
+basically here initializer list inhibits the call to default Dummy constructor that 
+"Entity e(777)" would be making automatically and calls the int constructor instead
+
+in cases like line 29 if there isnt any compatible costructor a full copy will be made

@@ -1,0 +1,3 @@
+NOTES
+"constexpr" lets parameters used in templates to be considered as normal hardcoded
+values in other compile time operations like static_asserts

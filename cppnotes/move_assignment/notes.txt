@@ -1,0 +1,5 @@
+NOTES
+like moving constructor but used to move data from an existing variable into 
+another existing variable using "=" operator
+Dummy dest = std::move(src) -> this calls contructor and not "operator="
+dest = std::move(src) -> this calls "operator=" function

@@ -1,0 +1,6 @@
+NOTE
+lvalues identifies memory locations
+rvalues are temporary variables that theoretically can be "hardcoded"
+"&&" takes rvalues only
+"&" takes lvalues only
+"const int&" can take both types of refs

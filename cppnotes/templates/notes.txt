@@ -1,0 +1,5 @@
+NOTE
+template = prototype of a function
+templates params (typename etc) evaluated at compile time and used to make 
+the effective functions for each used value of params
+templates -> compile time, macro -> preprocessing, before compile
