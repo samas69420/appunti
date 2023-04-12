@@ -1,3 +1,3 @@
-g++ infunction.cpp -o infunction
-.\infunction
-del .\infunction.exe
+g++ main.cpp -o main
+.\main
+del .\main.exe

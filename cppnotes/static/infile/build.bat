@@ -1,3 +1,3 @@
-g++ infile.cpp -o infile
-.\infile
-del .\infile.exe
+g++ static.cpp main.cpp -o static
+.\static
+del .\static.exe

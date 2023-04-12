@@ -1,3 +1,3 @@
-g++ inclass.cpp -o inclass
-.\inclass
-del .\inclass.exe
+g++ static.cpp -o static
+.\static
+del .\static.exe
