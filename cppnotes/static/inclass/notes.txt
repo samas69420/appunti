@@ -2,4 +2,5 @@ NOTE
 "static" in file is like private for a class but for translation unit
 "static" in class shares the same value among all instances
 good practice for file case: everything should be marked static if it wont be shared
-static members (Vehicle::static_x) must be declared only in global scope, but why?
+static members (Vehicle::static_x) must be declared only in global scope
+(i guess because they will stay in memory like global variables)

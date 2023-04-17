@@ -1,0 +1,14 @@
+postfix vs prefix inrement/decrement operators
+
+Entity operator++(int a) -> postfix
+
+ output cant be a ref because the returned value is actually another brand new value
+ while the memory containing the old value gets modified
+ 
+ who is a? usually unused (i guess its only to indentify if the postfix or prefix
+ version is being used), its default value is 0 but if needed can be actually passed as 
+ parameter and used into function by calling it explicitly ( e.operator++(69); )
+ https://learn.microsoft.com/en-us/cpp/cpp/increment-and-decrement-operator-overloading-cpp?view=msvc-170
+
+
+Entity& operator++() -> prefix

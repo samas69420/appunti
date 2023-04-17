@@ -2,5 +2,12 @@ NOTE
 singletons are classes that will be instanciated only once
 
 QUESTIONS
-why size is 1?
-why can instanciate unique_instance if it is private?
+why size is 1? -> Any instantiable object in C++ needs to be able to be identified at 
+                  an address in memory. That means at least one byte must be allocated
+                  in memory
+why can instanciate unique_instance if it is private? -> static members must be declared
+                                                         outside class
+
+singleton2 is a variation of singleton that uses a static variable inside "get" function
+instead of using a static member, this makes possible to avoid declaring static stuff in
+the global scope

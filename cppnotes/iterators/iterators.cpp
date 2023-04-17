@@ -7,9 +7,9 @@ class Iterator
 {
 public:
     Iterator(int* ptr):ptr(ptr){}
-    int* operator++() {
+    Iterator& operator++() { // prefix
         ptr++;
-        return ptr;
+        return *this;;
     }
     bool operator!=(Iterator other){
         if(other.ptr != ptr){ return true;}
@@ -41,8 +41,7 @@ int main()
     //// extended form
     //for(Iterator it = c.begin(); 
     //    it != c.end();
-    //    ++it)
-    //{
-    //    LOG(*it);
-    //}
+    //    ++it){
+    //      LOG(*it);
+    //    }
 }

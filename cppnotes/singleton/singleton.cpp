@@ -14,9 +14,23 @@ public:
 
 Singleton Singleton::unique_instance;
 
+
+class Singleton2
+{
+private:
+    Singleton2(){}
+public:
+    static void s_fun(){ LOG("singleton2 function"); }
+    static Singleton2& get(){ 
+            static Singleton2 u_inst{};
+            return u_inst;
+        }
+};
+
 int main()
 {
     //Singleton s = Singleton::get(); // error because copy constructor is deleted
     Singleton::get().s_fun();
+    Singleton2::get().s_fun();
     LOG(sizeof(Singleton)); // 1 
 }

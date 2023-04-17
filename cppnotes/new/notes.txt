@@ -1,3 +1,7 @@
 NOTE
 new -> like malloc + call constructor
 delete -> like free + call destructor
+
+mixing new/delete with malloc/free is undefined behaviour
+memory allocated with new should be released with delete
+memory allocated with malloc should be released with free
