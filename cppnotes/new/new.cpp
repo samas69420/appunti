@@ -32,7 +32,7 @@ int main()
     //delete placed_manually; undefined behaviour
 
     typedef int myint; // this is for using ...->~myint() syntax, otherwise error (https://stackoverflow.com/questions/456310/destructors-of-builtin-types-int-char-etc)
-    placed_manually->~myint(); // this should be the standard way even tho in this case it does only a print
+    placed_manually->~myint(); // this should be the standard way 
     free(ptr); 
 
     return 0;
